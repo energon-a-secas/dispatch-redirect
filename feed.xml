@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Hand-written, and deliberately not generated. dispatch.neorgon.com publishes
+  nothing: this file exists so a reader still subscribed to the old address
+  gets a feed instead of a 404, learns the new address, and can follow it.
+
+  The self link is the NEW feed on purpose. A reader that honours rel="self"
+  treats a self link differing from the URL it fetched as "this feed moved
+  here" and updates the subscription. Pointing it back at this host would
+  strand every subscriber on a feed that never gains another item.
+
+  One item only. The back catalogue is not repeated here: every story in the
+  real feed carries a guid with isPermaLink="false" holding the story id, and
+  reprinting those ids under a second host would re-deliver 31 old stories to
+  everyone who kept the old subscription.
+-->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Antenne: Neorgon fleet news</title>
+    <link>https://antenne.neorgon.com/</link>
+    <atom:link href="https://antenne.neorgon.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Launches, features, and fixes across the Neorgon fleet, approved at the desk before publishing</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 23 Sep 2026 12:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Dispatch is now Antenne, and so is this feed</title>
+      <link>https://antenne.neorgon.com/</link>
+      <guid isPermaLink="false">dispatch-redirect-feed-moved-to-antenne</guid>
+      <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
+      <category>note</category>
+      <description>Dispatch has been renamed to Antenne. The site now lives at https://antenne.neorgon.com/ and the feed at https://antenne.neorgon.com/feed.xml, which is where this feed's self link points. Every story kept its id, so an old permalink of the form /#p=story-id still resolves after the redirect. dispatch.neorgon.com forwards to the new address and publishes nothing further.</description>
+    </item>
+  </channel>
+</rss>

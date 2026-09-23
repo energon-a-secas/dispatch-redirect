@@ -1,0 +1,6 @@
+# Crawlable on purpose. This host only redirects to antenne.neorgon.com, and a
+# crawler has to fetch the page to see the canonical and follow the move.
+User-agent: *
+Allow: /
+
+Sitemap: https://dispatch.neorgon.com/sitemap.xml

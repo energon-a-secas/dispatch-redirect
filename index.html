@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Dispatch">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="neo-mark" content="on">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispatch is now Antenne | Neorgon</title>
+<meta name="description" content="Dispatch was renamed to Antenne. This page forwards to antenne.neorgon.com, and the feed at /feed.xml points readers at the new one.">
+<meta property="og:title" content="Dispatch is now Antenne">
+<meta property="og:description" content="Dispatch was renamed to Antenne. This page forwards to antenne.neorgon.com.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://antenne.neorgon.com/">
+<meta property="og:site_name" content="Neorgon">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dispatch is now Antenne">
+<meta name="twitter:description" content="Dispatch was renamed to Antenne. This page forwards to antenne.neorgon.com.">
+<!-- Indexable on purpose. noindex would tell a search engine to discard the old
+     URL instead of passing its signals to the new one; canonical plus the meta
+     refresh is the pair that moves a page. -->
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://antenne.neorgon.com/">
+<meta name="theme-color" content="#040714">
+<!-- Relative on purpose: a reader auto-discovering on the old host should find
+     the local feed, which is the one that names the new feed address. -->
+<link rel="alternate" type="application/rss+xml" title="Antenne: Neorgon fleet news" href="/feed.xml">
+<meta http-equiv="refresh" content="0; url=https://antenne.neorgon.com/">
+<script>
+  // Preserve the path so a deep link survives the move, and the hash with it:
+  // every story permalink on this site is /#p=<story-id>.
+  location.replace('https://antenne.neorgon.com' + location.pathname + location.search + location.hash);
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Antenne",
+  "alternateName": "Dispatch",
+  "url": "https://antenne.neorgon.com/",
+  "description": "Launches, features, and fixes across the Neorgon fleet, approved at the desk before publishing",
+  "publisher": { "@type": "Organization", "name": "Neorgon", "url": "https://neorgon.com/" }
+}
+</script>
+<style>
+  body { background:#0b0b10; color:#e6e6ef; font:16px/1.6 system-ui,sans-serif;
+         display:grid; place-items:center; min-height:100dvh; margin:0; text-align:center; }
+  main { padding:24px; }
+  a { color:#a855f7; }
+  p.small { color:#9a9aae; font-size:14px; }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Dispatch is now Antenne</h1>
+    <p>Redirecting to <a href="https://antenne.neorgon.com/">antenne.neorgon.com</a>.</p>
+    <p class="small">Subscribed to the old feed? It now points at
+      <a href="https://antenne.neorgon.com/feed.xml">antenne.neorgon.com/feed.xml</a>.</p>
+  </main>
+</body>
+</html>
